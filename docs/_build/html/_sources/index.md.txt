@@ -1,59 +1,31 @@
-# Ejemplos con Tornado
+# Introducción a Tornado
 
-En los siguientes pasos mostramos como podemos ejecutar los ejemplos realizados en este repositorio
+![image](https://user-images.githubusercontent.com/56738048/209691837-f6cf9c29-f15a-40ab-947d-b6cc9a1e92ec.png)
 
-## Requisitos
+## ¿Que es Tornado?
 
-- python3.8
-- virtualenv
-- git
+- Un framework asyncrono
+- Framework Python Open Source
+- Desarrollado por FriendFeed y comprado por Facebook en 2009
+- Resuelve el problema C10k
+ 
 
-## Crear entorno
+## Tornado se divide en 4 componentes
 
-Nos posicionamos en nuestra carpeta donde vamos a guardar nuestro proyecto y creamos nuestro entorno
+- Web Framework, (RequestHandler) para crear aplicaciones web
+- Servidores y clientes asincrónicos
+- Libreria asincrona
+- Corutinas y otras primitivas
 
-```shell
-virtualenv env_tornado_example -p3.8
+## Instalación
+
 ```
-
-## Clonamos el repositorio
-
-```shell
-git clone https://github.com/pycun/tornado_example.git
-```
-
-## Activamos el entorno 
-
-```shell
-source env_tornado_example/bin/activate
-```
-
-## Entramos a la carpeta del proyecto
-
-```shell
-cd tornado_example
-```
-
-## Instalamos tornado
-
-```shell
 pip install tornado
-```
-
-O tambien podemos instalar el requirements.txt
-
-```shell
-pip install -r requirements.txt
 ```
 
 ## Ejemplos
 
 ### Ejemplo 1 - Hola Tornado
-
-```shell
-python ejemplo1.py
-```
-
 **ejemplo1.py**
 ```python
 # importing the main event loop
@@ -85,9 +57,6 @@ if __name__ == "__main__":
 ```
 
 ### Ejemplo 2 - Hola Tornado 2
-```shell
-python ejemplo2.py
-```
 **ejemplo2.py**
 ```python
 # importing the main event loop
@@ -139,9 +108,6 @@ if __name__ == "__main__":
 </html>
 ```
 ### Ejemplo 3 - ¿Hace calor o frio? | GET
-```shell
-python ejemplo3.py
-```
 **ejemplo3.py**
 ```python
 # importing the main event loop
@@ -200,9 +166,6 @@ if __name__ == "__main__":
 </html>
 ```
 ### Ejemplo 4 - ¿Hace calor o frio? | POST
-```shell
-python ejemplo4.py
-```
 **ejemplo4.py**
 ```python
 # importing the main event loop
@@ -274,15 +237,4 @@ if __name__ == "__main__":
     {% end %}
 </body>
 </html>
-```
-### Ejemplo 5 - Chat Demo con Poll
-
-```shell
-python chatdemo.py
-```
-
-### Ejemplo 6 - Chat Demo con Websocket
-
-```shell
-python chatdemowebsocket.py
 ```
